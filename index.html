@@ -5,7 +5,10 @@
 	<link rel="stylesheet" href="./style.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script   src="https://code.jquery.com/ui/1.12.0-rc.1/jquery-ui.min.js"   integrity="sha256-mFypf4R+nyQVTrc8dBd0DKddGB5AedThU73sLmLWdc0="   crossorigin="anonymous"></script>
+	
 
 </head>
 <body id="body">
@@ -22,7 +25,7 @@
 				</div>
 			</div>
 			<div class="parallax__layer parallax__layer--base">
-				<div class="bio description group">
+				<div class="bio description group" id="container">
 					<div class="header center ">
 						<ul class="tab-list group">
 							<div class="left-left-col">
@@ -199,8 +202,9 @@
 									<a target="_blank" href="https://angel.co/vincent-budrovich"><i class="icon-link fa fa-angellist"></i></a>
 								</div>
 
-								<div class="contact-item">
+								<div class="contact-item" id="last-contact-info">
 									<a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=vinchenzio@gmail.com"><i class="icon-link fa fa-envelope-o"></i></a>
+		
 								</div>
 
 							</div>
@@ -213,6 +217,6 @@
 	</div>
 
 </body>
-
+	<script src="jquery.scrollIntoView.min.js"></script>
 	<script src="personal_site.js"></script>
 </html>

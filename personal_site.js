@@ -4,9 +4,16 @@ var contact_button = document.getElementById("contact");
 var project = document.getElementById("project-info");
 var bio = document.getElementById("bio-info");
 var contact_body = document.getElementById("contact-info")
+var container = document.getElementsByClassName("bio")[0];
+var _scrolled = false
+
 
 document.addEventListener("click", function(event){
 	if (event.target.id === "bio" || event.target.id === "proj" || event.target.id === "contact"){
+		if (!_scrolled){
+			$("#container").scrollIntoView(2500, "easeOutExpo");
+			_scrolled = true;
+		} 
 		toggle(event.target.id);
 	}
 })
@@ -41,5 +48,4 @@ var toggle = function(id){
 		contact_button.className = "tag hvr-underline-reveal selected"
 
 	}
-
 }
